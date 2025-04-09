@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>投影方式</title>
+      <link href="/2025/04/08/%E6%8A%95%E5%BD%B1%E6%96%B9%E5%BC%8F/"/>
+      <url>/2025/04/08/%E6%8A%95%E5%BD%B1%E6%96%B9%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<p>等距圆柱投影</p><p>等距圆柱投影方式如图所示：<br><img src="https://img2023.cnblogs.com/blog/981804/202306/981804-20230602142021107-871401001.png" alt="图片" title="等距圆柱投影示意图"><br><img src="https://img2023.cnblogs.com/blog/981804/202306/981804-20230602143153357-1081762523.png" alt="图片" title="等距圆柱投影示意图2"><br>等距圆柱投影（Equidistant Cylindrical Projection）是一种简单的地图投影方法，属于圆柱投影的一种。它的特点是保持经线和纬线均为等距的平行直线，形成规则的网格<br>基本特性<br>经纬线形状：<br>经线：等间隔的平行竖直线。</p><p>纬线：等间隔的平行水平线，与经线垂直。</p><p>网格呈矩形，类似棋盘。</p><p>等距性质：</p><p>沿经线方向：任意两条纬线之间的距离与实际地球表面相同（纬度间隔保持等距）。</p><p>沿纬线方向：赤道上的比例尺是真实的，但高纬度地区的东西方向会被拉伸（因纬线长度与实际不符）。</p><p>变形：</p><p>角度变形：所有纬线和经线的交点处角度保持不变（局部形状在小范围内近似），但整体地图存在显著的角度变形，尤其是高纬度地区。</p><p>面积变形：高纬度地区的面积会被夸大（例如极地地区显得异常大）。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 投影 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Fist Blog</title>
+      <link href="/2025/04/08/my-first-blog/"/>
+      <url>/2025/04/08/my-first-blog/</url>
+      
+        <content type="html"><![CDATA[<p>先把甜甜放到第一位</p><p>邯郸学步，感谢陈师兄</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2025/04/08/hello-world/"/>
+      <url>/2025/04/08/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
