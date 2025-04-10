@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Tmux--让服务器在后台继续干苦力 | Kaifan's Blog</title><meta name="author" content="Kaifan"><meta name="copyright" content="Kaifan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Tmux是陈师兄介绍的方法，Tmux是一个终端复用器（terminal multiplexer），属于常用的开发工具，学会了之后可以大大的提高工作效率。作为服务器窗口操作，主要可以用到的命令如下：（PS：本文作为笔者自己的笔记，感谢：https:&#x2F;&#x2F;blog.csdn.net&#x2F;CSSDCC&#x2F;article&#x2F;details&#x2F;121231906网页的详细讲解    新建窗口 tmux new -s y">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Tmux--让服务器在后台继续干苦力 | Kaifan's Blog</title><meta name="author" content="Kaifan"><meta name="copyright" content="Kaifan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Tmux是陈师兄介绍的方法，Tmux是一个终端复用器（terminal multiplexer），属于常用的开发工具，学会了之后可以大大的提高工作效率。作为服务器窗口操作，主要可以用到的命令如下：（PS：本文作为笔者自己的笔记，感谢：https:&#x2F;&#x2F;blog.csdn.net&#x2F;CSSDCC&#x2F;article&#x2F;details&#x2F;121231906  文章    新建窗口 tmux new -s your">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tmux--让服务器在后台继续干苦力">
 <meta property="og:url" content="http://example.com/2025/04/10/tmux/index.html">
 <meta property="og:site_name" content="Kaifan&#39;s Blog">
-<meta property="og:description" content="Tmux是陈师兄介绍的方法，Tmux是一个终端复用器（terminal multiplexer），属于常用的开发工具，学会了之后可以大大的提高工作效率。作为服务器窗口操作，主要可以用到的命令如下：（PS：本文作为笔者自己的笔记，感谢：https:&#x2F;&#x2F;blog.csdn.net&#x2F;CSSDCC&#x2F;article&#x2F;details&#x2F;121231906网页的详细讲解    新建窗口 tmux new -s y">
+<meta property="og:description" content="Tmux是陈师兄介绍的方法，Tmux是一个终端复用器（terminal multiplexer），属于常用的开发工具，学会了之后可以大大的提高工作效率。作为服务器窗口操作，主要可以用到的命令如下：（PS：本文作为笔者自己的笔记，感谢：https:&#x2F;&#x2F;blog.csdn.net&#x2F;CSSDCC&#x2F;article&#x2F;details&#x2F;121231906  文章    新建窗口 tmux new -s your">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/headimage.jpeg">
 <meta property="article:published_time" content="2025-04-10T15:00:22.000Z">
-<meta property="article:modified_time" content="2025-04-10T15:16:00.426Z">
+<meta property="article:modified_time" content="2025-04-10T15:20:36.631Z">
 <meta property="article:author" content="Kaifan">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/img/headimage.jpeg"><script type="application/ld+json">{
@@ -17,7 +17,7 @@
   "url": "http://example.com/2025/04/10/tmux/",
   "image": "http://example.com/img/headimage.jpeg",
   "datePublished": "2025-04-10T15:00:22.000Z",
-  "dateModified": "2025-04-10T15:16:00.426Z",
+  "dateModified": "2025-04-10T15:20:36.631Z",
   "author": [
     {
       "@type": "Person",
@@ -158,7 +158,7 @@
   isHighlightShrink: false,
   isToc: false,
   pageType: 'post'
-}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/waves-3085701.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Kaifan's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">Tmux--让服务器在后台继续干苦力</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">Tmux--让服务器在后台继续干苦力</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-10T15:00:22.000Z" title="发表于 2025-04-10 23:00:22">2025-04-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-10T15:16:00.426Z" title="更新于 2025-04-10 23:16:00">2025-04-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>Tmux是陈师兄介绍的方法，Tmux是一个终端复用器（terminal multiplexer），属于常用的开发工具，学会了之后可以大大的提高工作效率。<br>作为服务器窗口操作，主要可以用到的命令如下：（PS：本文作为笔者自己的笔记，感谢：<a target="_blank" rel="noopener" href="https://blog.csdn.net/CSSDCC/article/details/121231906%E7%BD%91%E9%A1%B5%E7%9A%84%E8%AF%A6%E7%BB%86%E8%AE%B2%E8%A7%A3">https://blog.csdn.net/CSSDCC/article/details/121231906网页的详细讲解</a><br><img src="/images/loading.jpg"></p>
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/waves-3085701.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Kaifan's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">Tmux--让服务器在后台继续干苦力</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">Tmux--让服务器在后台继续干苦力</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-10T15:00:22.000Z" title="发表于 2025-04-10 23:00:22">2025-04-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-10T15:20:36.631Z" title="更新于 2025-04-10 23:20:36">2025-04-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>Tmux是陈师兄介绍的方法，Tmux是一个终端复用器（terminal multiplexer），属于常用的开发工具，学会了之后可以大大的提高工作效率。<br>作为服务器窗口操作，主要可以用到的命令如下：（PS：本文作为笔者自己的笔记，感谢：<a target="_blank" rel="noopener" href="https://blog.csdn.net/CSSDCC/article/details/121231906">https://blog.csdn.net/CSSDCC/article/details/121231906</a>  文章<br><img src="/images/loading.jpg"></p>
 
 
 <ol>
