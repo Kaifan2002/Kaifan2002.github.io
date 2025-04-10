@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Tmux--让服务器在后台继续干苦力</title>
+      <link href="/2025/04/10/tmux/"/>
+      <url>/2025/04/10/tmux/</url>
+      
+        <content type="html"><![CDATA[<p>Tmux是陈师兄介绍的方法，Tmux是一个终端复用器（terminal multiplexer），属于常用的开发工具，学会了之后可以大大的提高工作效率。<br>作为服务器窗口操作，主要可以用到的命令如下：（PS：本文作为笔者自己的笔记，感谢：<a href="https://blog.csdn.net/CSSDCC/article/details/121231906%E7%BD%91%E9%A1%B5%E7%9A%84%E8%AF%A6%E7%BB%86%E8%AE%B2%E8%A7%A3">https://blog.csdn.net/CSSDCC/article/details/121231906网页的详细讲解</a><br><img src="/images/loading.jpg"></p><ol><li>新建窗口 tmux new -s your-session-name</li><li>在tmux窗口中，按下ctrl+b d或者输入以下命令，就会将当前session与窗口分离，session转到后台执行  tmux detach</li><li>退出session tmux kill-session -t your-session-name 该命令会直接杀死窗口</li><li>切换窗口：<br>     ctrl+b c: 创建一个新窗口（状态栏会显示多个窗口的信息）<br>     ctrl+b p: 切换到上一个窗口（按照状态栏的顺序）<br>     ctrl+b n: 切换到下一个窗口<br>     ctrl+b w: 从列表中选择窗口（这个最好用）</li><li>使用快捷键ctrl+b [ ，就可以通过方向键上下移动使用PageUp和PageDown可以实现上下翻页</li><li>注意！！！不要乱用ctrl+c 容易导致窗口关闭</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>投影方式</title>
       <link href="/2025/04/08/%E6%8A%95%E5%BD%B1%E6%96%B9%E5%BC%8F/"/>
       <url>/2025/04/08/%E6%8A%95%E5%BD%B1%E6%96%B9%E5%BC%8F/</url>
